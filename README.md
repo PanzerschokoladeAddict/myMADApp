@@ -26,21 +26,19 @@ In the output, you'll find options to open the app in a
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
 ## Libraries/Tools Used
-
 The following libraries and tools have been included:
+
 - [Expo](https://expo.dev/)
    - [Expo EAS Build](https://docs.expo.dev/build-reference/apk/)
    - [Expo Router](https://docs.expo.dev/versions/latest/sdk/router/)
    - [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/)
-   - [Expo React Native Safe-area Context](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
+   - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/)
    - [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/)
-
+   - [Expo Safe Area Context](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
 - [React Native](https://reactnative.dev/)
    - [React Native Onboarding Swiper](https://www.npmjs.com/package/react-native-onboarding-swiper)
-   - [React Native Vision Camera](https://www.npmjs.com/package/react-native-vision-camera)
-   - [React Native QRcode SVG](https://www.npmjs.com/package/react-native-qrcode-svg)
-   - [React Native Confetti Canno](https://github.com/vincentcatillon/react-native-confetti-cannon)
+   - [React Native QRCode SVG](https://www.npmjs.com/package/react-native-qrcode-svg)
+   - [React Native Confetti Cannon](https://github.com/vincentcatillon/react-native-confetti-cannon)
    - [React Native Paper](https://reactnativepaper.com/)
-      - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
-
+   - [React Native SVG](https://www.npmjs.com/package/react-native-svg)
 - [Pop-up UI](https://github.com/RafaelAugustoS/react-native-popup-ui)
