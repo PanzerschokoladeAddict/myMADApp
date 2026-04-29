@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# My Expo App
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -25,26 +25,19 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Libraries/Tools Used
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The following libraries and tools have been included:
+- [Expo](https://expo.dev/)
+- [Expo Router](https://docs.expo.dev/versions/latest/sdk/router/)
+- [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/)
+- [Expo Safe-area Context](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
+- [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/)
+- [React Native](https://reactnative.dev/)
+- [React Native Onboarding Swiper](https://www.npmjs.com/package/react-native-onboarding-swiper)
+- [React Native Vision Camera](https://www.npmjs.com/package/react-native-vision-camera)
+- [React Native QRcode SVG](https://www.npmjs.com/package/react-native-qrcode-svg)
+- [React Native Paper](https://reactnativepaper.com/)
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+- [React Native Confetti Canno](https://github.com/vincentcatillon/react-native-confetti-cannon)
+- [Pop-up UI](https://github.com/RafaelAugustoS/react-native-popup-ui)
