@@ -33,7 +33,6 @@ The following libraries and tools have been included:
    - [Expo Router](https://docs.expo.dev/versions/latest/sdk/router/)
    - [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/)
    - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/)
-   - [Expo Secure Store](https://docs.expo.dev/versions/latest/sdk/securestore/)
    - [Expo Safe Area Context](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)
 - [React Native](https://reactnative.dev/)
    - [React Native Onboarding Swiper](https://www.npmjs.com/package/react-native-onboarding-swiper)
@@ -41,4 +40,3 @@ The following libraries and tools have been included:
    - [React Native Confetti Cannon](https://github.com/vincentcatillon/react-native-confetti-cannon)
    - [React Native Paper](https://reactnativepaper.com/)
    - [React Native SVG](https://www.npmjs.com/package/react-native-svg)
-- [Pop-up UI](https://github.com/RafaelAugustoS/react-native-popup-ui)
