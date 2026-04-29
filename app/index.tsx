@@ -1,49 +1,55 @@
 import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet } from "react-native";
-import { Button } from "react-native-paper";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import Onboarding from "react-native-onboarding-swiper";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Index() {
+export default function SetUp() {
   const router = useRouter();
 
   return (
-    <SafeAreaProvider style={styles.header}>
-      <SafeAreaView style={styles.container}>
-        <Button
-          style={styles.button}
-          mode="contained"
-          buttonColor="#4c8f3f"
-          onPress={() => router.push("/setup")}
-        >
-          Create A New Team
-        </Button>
-        <Button
-          style={styles.button}
-          mode="contained"
-          buttonColor="#4c8f3f"
-          onPress={() => router.push("/join")}
-        >
-          Join An Existing Team
-        </Button>
-      </SafeAreaView>
-    </SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <Onboarding
+        onSkip={() => router.push("/register")}
+        onDone={() => router.push("/register")}
+        pages={[
+          {
+            backgroundColor: "#4c8f3f",
+            image: <></>,
+            title: "Welcome to STEMM Lab",
+            subtitle:
+              "A hands-on science challenge app for curious minds. Compete, explore, and discover!",
+          },
+          {
+            backgroundColor: "#3a7bd5",
+            image: <></>,
+            title: "Team Challenges",
+            subtitle:
+              "Work together as a team to complete real-world science and engineering activities.",
+          },
+          {
+            backgroundColor: "#e8a838",
+            image: <></>,
+            title: "Record Your Results",
+            subtitle:
+              "Capture videos, log your data, and compare your results against other teams on the leaderboard.",
+          },
+          {
+            backgroundColor: "#9b59b6",
+            image: <></>,
+            title: "Ready to Begin?",
+            subtitle:
+              "Create a new team or join an existing one to start your STEMM Lab adventure!",
+          },
+        ]}
+      />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  header: {
-    padding: 40,
-  },
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 80,
-  },
-  button: {
-    justifyContent: "center",
-    width: "70%",
-    height: 80,
+    backgroundColor: "#000",
   },
 });
