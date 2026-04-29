@@ -10,8 +10,8 @@ export default function SetUp() {
   return (
     <SafeAreaView style={styles.container}>
       <Onboarding
-        onSkip={() => router.push("/register")}
-        onDone={() => router.push("/register")}
+        onSkip={() => router.push("/setup")}
+        onDone={() => router.push("/setup")}
         pages={[
           {
             backgroundColor: "#4c8f3f",
