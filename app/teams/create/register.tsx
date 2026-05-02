@@ -32,7 +32,7 @@ export default function Register() {
         </Text>
 
         <Image
-          source={require("../assets/images/team.png")}
+          source={require("../../../assets/images/team.png")}
           style={{ width: 200, height: 200, alignSelf: "center" }}
         />
 
