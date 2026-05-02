@@ -14,7 +14,7 @@ export default function Index() {
           style={styles.button}
           mode="contained"
           buttonColor="#4c8f3f"
-          onPress={() => router.push("/register")}
+          onPress={() => router.push("./create/register")}
         >
           Create A New Team
         </Button>
@@ -22,7 +22,7 @@ export default function Index() {
           style={styles.button}
           mode="contained"
           buttonColor="#4c8f3f"
-          onPress={() => router.push("/join")}
+          onPress={() => router.push("./join/join")}
         >
           Join An Existing Team
         </Button>

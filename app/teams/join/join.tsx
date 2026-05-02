@@ -31,7 +31,7 @@ export default function Join() {
   }
 
   function handleBarcodeScanned({ data }: { data: string }) {
-    router.push({ pathname: "/joined", params: { teamName: data } });
+    router.push({ pathname: "./joined", params: { teamName: data } });
   }
 
   return (
