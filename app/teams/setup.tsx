@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     height: "100%",
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: "49%",
-    paddingBottom: "49%",
+    paddingTop: "40%",
+    paddingBottom: "40%",
   },
 });
