@@ -12,16 +12,18 @@ export default function Index() {
       <SafeAreaView style={styles.container}>
         <Button
           style={styles.button}
+          contentStyle={styles.buttonContent}
           mode="contained"
-          buttonColor="#4c8f3f"
+          buttonColor="#8f3f3f"
           onPress={() => router.push("./create/register")}
         >
           Create A New Team
         </Button>
         <Button
           style={styles.button}
+          contentStyle={styles.buttonContent}
           mode="contained"
-          buttonColor="#4c8f3f"
+          buttonColor="#3f488f"
           onPress={() => router.push("./join/join")}
         >
           Join An Existing Team
@@ -33,17 +35,23 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   header: {
-    padding: 40,
+    flex: 1,
   },
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 80,
+    paddingHorizontal: 20,
+    paddingVertical: 20,
   },
   button: {
+    flex: 1,
+    marginVertical: 6,
     justifyContent: "center",
-    width: "70%",
-    height: 80,
+  },
+  buttonContent: {
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: "49%",
+    paddingBottom: "49%",
   },
 });
