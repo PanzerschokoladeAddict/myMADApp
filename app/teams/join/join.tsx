@@ -1,4 +1,5 @@
 import { CameraView, useCameraPermissions } from "expo-camera";
+import * as Haptics from "expo-haptics";
 import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -20,7 +21,10 @@ export default function Join() {
           We need your permission to use the camera
         </Text>
         <Button
-          onPress={requestPermission}
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+            requestPermission();
+          }}
           mode="contained"
           buttonColor="#3f648f"
         >

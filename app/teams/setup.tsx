@@ -1,3 +1,4 @@
+import * as Haptics from "expo-haptics";
 import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet } from "react-native";
@@ -15,7 +16,10 @@ export default function Index() {
           contentStyle={styles.buttonContent}
           mode="contained"
           buttonColor="#8f3f3f"
-          onPress={() => router.push("./create/register")}
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+            router.push("./create/register");
+          }}
         >
           Create A New Team
         </Button>
@@ -24,7 +28,10 @@ export default function Index() {
           contentStyle={styles.buttonContent}
           mode="contained"
           buttonColor="#3f488f"
-          onPress={() => router.push("./join/join")}
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+            router.push("./join/join");
+          }}
         >
           Join An Existing Team
         </Button>

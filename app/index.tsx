@@ -1,3 +1,4 @@
+import * as Haptics from "expo-haptics";
 import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet } from "react-native";
@@ -10,8 +11,14 @@ export default function SetUp() {
   return (
     <SafeAreaView style={styles.container}>
       <Onboarding
-        onSkip={() => router.push("/teams/setup")}
-        onDone={() => router.push("/teams/setup")}
+        onSkip={() => {
+          Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+          router.push("/teams/setup");
+        }}
+        onDone={() => {
+          Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+          router.push("/teams/setup");
+        }}
         pages={[
           {
             backgroundColor: "#4c8f3f",
@@ -25,7 +32,7 @@ export default function SetUp() {
             image: <></>,
             title: "Team Challenges",
             subtitle:
-              "Work together as a team to complete real-world science and engineering activities.",
+              "Work together as a team to complete science and engineering activities.",
           },
           {
             backgroundColor: "#e8a838",

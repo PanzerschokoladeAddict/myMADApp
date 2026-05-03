@@ -34,7 +34,10 @@ export default function Joined() {
       <Button
         mode="contained"
         buttonColor="#4c8f3f"
-        onPress={() => router.replace("/")}
+        onPress={() => {
+          Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+          router.replace("/");
+        }}
         style={styles.button}
       >
         Back to Home

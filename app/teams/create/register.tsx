@@ -1,3 +1,4 @@
+import * as haptic from "expo-haptics";
 import { router } from "expo-router";
 import React from "react";
 import { Alert, Image, StyleSheet } from "react-native";
@@ -65,7 +66,10 @@ export default function Register() {
           style={styles.button}
           mode="contained"
           buttonColor="#4c8f3f"
-          onPress={() => _handleCreate()}
+          onPress={() => {
+            haptic.impactAsync(haptic.ImpactFeedbackStyle.Medium);
+            _handleCreate();
+          }}
         >
           Register
         </Button>
@@ -74,7 +78,10 @@ export default function Register() {
           style={styles.button}
           mode="contained"
           buttonColor="#8f3f3f"
-          onPress={() => _handleExit()}
+          onPress={() => {
+            haptic.impactAsync(haptic.ImpactFeedbackStyle.Medium);
+            _handleExit();
+          }}
         >
           Exit to Home
         </Button>
