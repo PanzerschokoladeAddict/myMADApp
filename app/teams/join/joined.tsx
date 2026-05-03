@@ -2,7 +2,6 @@ import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect } from "react";
 import { StyleSheet, View } from "react-native";
-import ConfettiCannon from "react-native-confetti-cannon";
 import { Button, Text } from "react-native-paper";
 
 export default function Joined() {
@@ -15,12 +14,6 @@ export default function Joined() {
 
   return (
     <View style={styles.container}>
-      <ConfettiCannon
-        count={100}
-        origin={{ x: -10, y: 0 }}
-        autoStart={false}
-        fadeOut={true}
-      />
       <Text variant="displaySmall" style={styles.emoji}>
         🎉
       </Text>
