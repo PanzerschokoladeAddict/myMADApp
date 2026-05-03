@@ -23,8 +23,6 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
 ## Libraries/Tools Used
 The following libraries and tools have been included:
 
@@ -37,6 +35,5 @@ The following libraries and tools have been included:
 - [React Native](https://reactnative.dev/)
    - [React Native Onboarding Swiper](https://www.npmjs.com/package/react-native-onboarding-swiper)
    - [React Native QRCode SVG](https://www.npmjs.com/package/react-native-qrcode-svg)
-   - [React Native Confetti Cannon](https://github.com/vincentcatillon/react-native-confetti-cannon)
    - [React Native Paper](https://reactnativepaper.com/)
    - [React Native SVG](https://www.npmjs.com/package/react-native-svg)
