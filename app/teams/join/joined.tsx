@@ -5,7 +5,11 @@ import { StyleSheet, View } from "react-native";
 import { Button, Text } from "react-native-paper";
 
 export default function Joined() {
-  const { teamName } = useLocalSearchParams();
+  const { teamName, teamLeader, teamCode } = useLocalSearchParams<{
+    teamName: string;
+    teamLeader: string;
+    teamCode: string;
+  }>();
   const router = useRouter();
 
   useEffect(() => {
@@ -14,15 +18,18 @@ export default function Joined() {
 
   return (
     <View style={styles.container}>
-      <Text variant="displaySmall" style={styles.emoji}>
-        🎉
-      </Text>
       <Text variant="headlineMedium" style={styles.title}>
         You're in!
       </Text>
       <Text variant="bodyLarge" style={styles.teamName}>
         You've joined{"\n"}
         {teamName}
+      </Text>
+      <Text variant="bodyMedium" style={styles.teamLeader}>
+        Your team leader is {teamLeader}
+      </Text>
+      <Text variant="bodyMedium" style={styles.teamCode}>
+        Your team code is {teamCode}
       </Text>
       <Button
         mode="contained"
@@ -60,5 +67,15 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 16,
     width: "70%",
+  },
+  teamLeader: {
+    textAlign: "center",
+    fontSize: 16,
+    fontStyle: "italic",
+  },
+  teamCode: {
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });

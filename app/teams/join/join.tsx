@@ -35,7 +35,22 @@ export default function Join() {
   }
 
   function handleBarcodeScanned({ data }: { data: string }) {
-    router.push({ pathname: "./joined", params: { teamName: data } });
+    let teamParams: { teamName: string; teamLeader?: string; teamCode?: string } = { teamName: data };
+
+    try {
+      const parsed = JSON.parse(data);
+      if (parsed?.teamName && parsed?.teamLeader) {
+        teamParams = {
+          teamName: parsed.teamName,
+          teamLeader: parsed.teamLeader,
+          teamCode: parsed.teamCode,
+        };
+      }
+    } catch {
+      // If the QR code contains just the team name, fallback to that string.
+    }
+
+    router.push({ pathname: "./joined", params: teamParams });
   }
 
   return (

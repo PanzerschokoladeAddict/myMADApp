@@ -14,7 +14,7 @@ export default function Create() {
 
   if (!teamName || !teamLeader || !teamCode) return null;
 
-  const qrValue = teamName;
+  const qrValue = JSON.stringify({ teamName, teamLeader, teamCode });
 
   return (
     <SafeAreaProvider>

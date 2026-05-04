@@ -11,7 +11,7 @@ export default function Register() {
   const [teamCode, setTeamCode] = React.useState("");
 
   async function _handleExit() {
-    router.push("./setup");
+    router.push("../setup");
   }
 
   async function _handleCreate() {
