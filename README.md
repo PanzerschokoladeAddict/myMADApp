@@ -27,7 +27,6 @@ In the output, you'll find options to open the app in a
 The following libraries and tools have been included:
 
 - [Expo](https://expo.dev/)
-   - [Expo EAS Build](https://docs.expo.dev/build-reference/apk/)
    - [Expo Router](https://docs.expo.dev/versions/latest/sdk/router/)
    - [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/)
    - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/)
